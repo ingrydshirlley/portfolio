@@ -1,0 +1,117 @@
+.Home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 4rem;
+
+    div {
+        display: flex;
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .textos {
+            display: flex;
+            flex-direction: column;
+            width: 25rem;
+
+            h2 {
+                color: var(--primary-color);
+                font-size: 3rem;
+                font-weight: 700;
+                height: 3.5rem;
+                width: 100%;
+            }
+
+            .white {
+                color: var(--secondary-color);
+            }
+
+            p {
+                color: var(--text-color);
+                font-size: 1.4rem;
+                font-weight: 500;
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            .buttons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 2rem;
+
+                button {
+                    color: var(--secondary-color);
+                    font-size: 1rem;
+                    font-weight: 500;
+                    width: 500px;
+                    padding: .7rem;
+                    background-color: var(--terciary-color);
+                    border: 1px solid var(--text-color);
+                    cursor: pointer;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        background-color: var(--terciary-color-transparent);
+                    }
+                }
+
+                #cv {
+                    background-color: var(--primary-color);
+                    border: 1px solid var(--primary-color);
+                    color: var(--terciary-color);
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        background-color: var(--primary-color-transparent);
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        div {
+            .textos {
+                h2 {
+                    font-size: 2.8rem;
+                    height: 3.3rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 460px) {
+        height: 100vh;
+        margin-top: 4rem;
+
+
+        div {
+            width: 80%;
+
+            .textos {
+                flex-direction: column;
+                width: 100%;
+
+                .buttons {
+                    flex-direction: column;
+                    margin-top: 5rem;
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

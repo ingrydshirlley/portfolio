@@ -1,0 +1,162 @@
+#Sobre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    height: 100vh;
+
+    .text-sobre {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+        align-items: center;
+        justify-content: space-between;
+        gap: .5rem;
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        span {
+            color: var(--text-color);
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 2rem;
+
+            span {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    .container-sobre {
+        display: flex;
+        width: 60%;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .2rem;
+
+            .icon {
+                width: 3.875rem;
+                height: 3.875rem;
+                flex-shrink: 0;
+                background-color: var(--shadow);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--primary-color);
+                font-size: 2rem;
+                margin-bottom: .7rem;
+            }
+
+            span {
+                color: var(--secondary-color);
+                font-size: 1.125rem;
+                font-weight: 700;
+            }
+
+            p {
+                color: var(--text-color);
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        gap: 4rem;
+
+        .text-sobre {
+            margin-top: 4rem;
+            width: 80%;
+            gap: .5rem;
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            span {
+                font-size: 1.1rem;
+                line-height: 1.8rem;
+            }
+        }
+
+        .container-sobre {
+            width: 80%;
+
+            .box {
+                gap: .1rem;
+
+                .icon {
+                    width: 3.8rem;
+                    height: 3.8rem;
+                    font-size: 1.8rem;
+                }
+
+                span {
+                    font-size: 1.1rem;
+                }
+
+                p {
+                    font-size: .95rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 460px) {
+        height: 100vh;
+        gap: 4rem;
+
+        .text-sobre {
+            margin-top: 0rem;
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            span {
+                font-size: 1.1rem;
+                line-height: 1.4rem;
+            }
+        }
+
+        .container-sobre {
+            gap: .5rem;
+
+            .box {
+                flex-direction: row;
+                gap: .5rem;
+                align-items: center;
+                justify-content: center;
+
+                .icon {
+                    width: 2.8rem;
+                    height: 2.8rem;
+                    font-size: 1.5rem;
+                    margin-bottom: 0rem;
+                }
+
+                span {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: .95rem;
+                }
+            }
+        }
+    }
+}
