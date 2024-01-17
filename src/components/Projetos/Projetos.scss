@@ -15,26 +15,6 @@
         align-items: center;
         justify-content: center;
 
-        .hFlVyB {
-            background-color: var(--primary-color);
-            box-shadow: 0 0 1px 3px var(--shadow);
-            height: 10px;
-        }
-
-        .hzTWok {
-            background-color: var(--primary-color-shadow);
-            color: (var(--shadow));
-            box-shadow: 0 0 2px 0px var(--shadow);
-        }
-
-        .iRumey {
-            box-sizing: border-box;
-            transition: all 0.3s ease;
-            font-size: 1.6em;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-        }
-
         .container {
             display: flex;
             flex-direction: row;
