@@ -18,7 +18,7 @@ function Home() {
   }, []);
 
   const downloadResume = () => {
-    const resumePath = '';
+    const resumePath = '../../../public/cv-front.pdf';
 
     const link = document.createElement('a');
     link.href = resumePath;
