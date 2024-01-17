@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.scss';
+import '../../../public/cv-front.pdf';
 
 function Home() {
   const [textoDigitado, setTextoDigitado] = useState('');
@@ -17,7 +18,7 @@ function Home() {
   }, []);
 
   const downloadResume = () => {
-    const resumePath = 'curriculo.pdf';
+    const resumePath = '';
 
     const link = document.createElement('a');
     link.href = resumePath;
