@@ -16,6 +16,29 @@ function Home() {
     return () => clearInterval(intervaloId);
   }, []);
 
+  const downloadResume = () => {
+    const resumePath = 'curriculo.pdf';
+
+    const link = document.createElement('a');
+    link.href = resumePath;
+    link.download = 'cv-front.pdf';
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+  };
+
+  const openWhatsApp = () => {
+    const phoneNumber = '5511949676202';
+    
+    const message = 'Olá, estou entrando em contato através do seu site.';
+
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappLink, '_blank');
+  };
+
   return (
     <div className="Home" id='home'>
       <div>
@@ -25,8 +48,8 @@ function Home() {
           <p>Desenvolvedora Front-End</p>
 
           <div className="buttons">
-            <button id='cv'> Download CV </button>
-            <button> Entrar em contato </button>
+            <button id='cv' onClick={downloadResume}> Download CV </button>
+            <button onClick={openWhatsApp}> Entrar em contato </button>
           </div>
         </div>
       </div>
