@@ -75,23 +75,8 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1003px) {
         gap: 4rem;
-
-        .text-sobre {
-            margin-top: 4rem;
-            width: 80%;
-            gap: .5rem;
-
-            h2 {
-                font-size: 1.8rem;
-            }
-
-            span {
-                font-size: 1.1rem;
-                line-height: 1.8rem;
-            }
-        }
 
         .container-sobre {
             width: 80%;
@@ -116,9 +101,55 @@
         }
     }
 
-    @media screen and (max-width: 460px) {
+    @media (max-width: 768px) {
+        gap: 4rem;
+
+        .text-sobre {
+            margin-top: 4rem;
+            width: 80%;
+            gap: .5rem;
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            span {
+                font-size: 1.1rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+
+    @media (max-width: 696px) {
+        gap: 4rem;
+
+        .container-sobre {
+            width: 80%;
+
+            .box {
+                gap: .1rem;
+
+                .icon {
+                    width: 3rem;
+                    height: 3rem;
+                    font-size: 1.5rem;
+                }
+
+                span {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 577px) {
         height: 100vh;
         gap: 4rem;
+        margin-top: 3rem;
 
         .text-sobre {
             margin-top: 0rem;
@@ -158,5 +189,12 @@
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 410px) {
+        height: 100vh;
+        gap: 4rem;
+        margin-top: 5rem;
+
     }
 }

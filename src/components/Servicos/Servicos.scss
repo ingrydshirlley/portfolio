@@ -59,7 +59,26 @@
         font-weight: 700;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1316px) {
+        .container-geral {
+            .box {
+                width: 18.875rem;
+            }
+        }
+    }
+
+    @media (max-width: 1132px) {
+
+        .container-geral {
+            .box {
+                width: 17.5rem;
+            }
+        }
+    }
+
+    
+
+    @media (max-width: 1050px) {
         gap: 1rem;
 
         .container-geral {
